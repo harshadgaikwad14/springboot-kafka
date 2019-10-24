@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    bootstrap-servers : localhost:9092
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#Publish Data : http://localhost:8080/send/foo/requeue Using Post Method
+#sample-01 - simple producer/consumer with dead-letter topic
+#sample-02 - multi-method listener
+#sample-03 - transactions      
